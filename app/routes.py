@@ -28,7 +28,6 @@ def signup():
     # Send that instance to the html as context
     return render_template('signup.html', form=form)
 
-
 @app.route('/login', methods=["GET", "POST"])
 def login():
     form = LoginForm()
